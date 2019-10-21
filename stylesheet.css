@@ -1,0 +1,348 @@
+/*---Global---*/
+body{
+    margin: 0;
+    background-color: silver;
+    padding: 1% 17%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.wrapper{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-justify: auto;
+    background-image: url('dark_wall.png');;
+
+}
+
+h2 span { 
+    margin-top: -300px;
+    padding-bottom: 200px; 
+    display: block; 
+}
+/*---nav---*/
+nav{
+    display: block;
+    overflow: hidden;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    /* background-color: white; */
+    background-image: url('plaingray.jpg');
+    height: 11vh;
+    line-height: 10vh;
+    text-align: center;
+    z-index: 2;
+}
+
+nav a{
+    clear: left;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.8s ease-in-out;
+}
+nav a:hover{
+    /* background-color: #11111120;
+    transform: scale(1.1); */
+    text-decoration: underline;
+}
+nav a img{
+    float: left;
+    height: 11vh;
+}
+#verline{
+    padding-left: 2%;
+    padding-right: 2%;
+    border-left: 2px solid black;
+    text-indent:100px;
+}
+.menu{
+    text-align: center;
+}
+/*---header---*/
+header{
+    position: relative;
+    background-image: url('dark_wall.png');
+    padding: 5% 8%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+}
+header p{
+    font-size: 20px;
+}
+header h2{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 3px;    
+}
+
+#ms{
+    font-size: 30px;
+}
+
+/*---education---*/
+.education{
+    background-image: url('plaingray.jpg');
+    padding: 5% 8%;
+    margin-right: auto;
+    margin-left: auto;
+    /*margin-top: 10px;*/
+    color: black;
+    margin-bottom: 80px;
+}
+
+.education h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.education dt{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.education dd{
+    font-size: 20px;
+}
+
+/*---skills---*/
+.skills{
+    background-image: url('dark_wall.png');
+    padding: 5% 8%;
+    margin-right: auto;
+    margin-left: auto;
+    /*margin-top: 10px;*/
+    margin-bottom: 80px;
+}
+
+.skills h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.skills ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+.line{
+    height: 25%;
+    width: 75%;
+    margin: 2% 2%;
+    /* line-height: 200%; */
+    font-size: 20px;
+    color: rgb(159, 162, 167);
+    padding: 0;
+    position: relative;
+}
+
+.line::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 10%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: lightgrey;
+}
+
+.line::after{
+    content: '';
+    background: slategrey;
+    height: 100%;
+    transition: 0.8ms;
+    display: block;
+    width: 100%;
+    animation:  animate-skill 1 4s;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: 1;
+}
+
+.line1::after{
+    max-width: 80%;
+}
+
+.line2::after{
+    max-width: 75%;
+}
+
+.line3::after{
+    max-width: 75%;
+}
+
+.line4::after{
+    max-width: 60%;
+}
+
+.line5::after{
+    max-width: 80%;
+}
+
+.line6::after{
+    max-width: 80%;
+}
+
+.line7::after{
+    max-width: 75%;
+}
+
+.line8::after{
+    max-width: 70%;
+}
+
+.line9::after{
+    max-width: 50%;
+}
+
+.line10::after{
+    max-width: 70%;
+}
+
+@keyframes animate-skill{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+/*---projects---*/
+.projects{
+    background-image: url('plaingray.jpg');
+    padding: 5% 8%;
+    margin-right: auto;
+    margin-left: auto;
+    /*margin-top: 10px;*/
+    color: black;
+    margin-bottom: 80px;
+}
+
+.projects h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.projects h3{
+    font-size: 25px;
+}
+
+.projects ul{
+    list-style: square ;
+}
+
+.projects p{
+    font-size: 20px;
+}
+/*---contact---*/
+.contacts{
+    background-image: url('blur.jpg');
+    background-size: 100%;
+    padding: 5% 8%;
+    margin-right: auto;
+    margin-left: auto;
+    /*margin-top: 10px;*/
+    color: black;
+    text-align: center;
+}
+
+.contacts img{
+    width: 6%;
+}
+
+#profiles{
+    padding: 0.5% 0.5%;
+    text-align: center;
+    height: 100%;
+    background-image: url(dark_wall.png);
+    color: white;
+}
+/*----footer----*/
+footer{
+    color: azure;
+    padding: 1% 1%;
+}
+/*---responsive---*/
+@media screen and (max-width:1000px) {
+    nav, .wrapper .line::before{
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    header p{
+        font-size:15px;
+    }
+    header h2{
+        font-size: 30px;
+    }
+    header #ms{
+        font-size: 25px;
+    }
+    .education h2{
+        font-size: 25px;
+    }
+    .education dt{
+        font-size: 15px;
+    }
+    .education dd{
+        font-size: 15px;
+    }
+    .skills h2{
+        font-size: 25px;
+    }
+    .skills ul{
+        font-size: 15px;
+    }
+    .line{
+        font-size: 20px;
+    }
+    .line::before{
+        left: 15%;
+        height: 80%;
+    }
+    .line::after{
+        left: 15%;
+        height: 80%;
+    }
+    .projects h2{
+        font-size: 25px;
+    }
+    .projects h3{
+        font-size: 20px;
+    }
+    .projects p{
+        font-size: 15px;
+    }
+    #profiles{
+        font-size: 15px;
+    }
+    body{
+        padding: 1% 1%;
+    }
+    .contacts img{
+        width: 40px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    nav a{
+      font-size: 11px;
+    }
+    .line{
+        font-size: 12px;
+    }
+    .line::before{
+        left: 15%;
+        height: 60%;
+    }
+    .line::after{
+        left: 15%;
+        height: 60%;
+    }
+  }
+
+
+  
